@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Amara — Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="#" class="logo">AMARA</a>
+
+  <div class="gender-toggle" id="genderToggle" role="tablist" aria-label="Shop by">
+    <button class="toggle-btn active" data-gender="women" role="tab" aria-selected="true">Women</button>
+    <button class="toggle-btn" data-gender="men" role="tab" aria-selected="false">Men</button>
+    <span class="toggle-pill" id="togglePill"></span>
+  </div>
+
+  <div class="nav-right">
+    <a href="#shop" class="btn btn-primary">Shop the edit</a>
+    <button class="bag-btn" id="bagBtn" aria-label="Bag">
+      Bag <span class="bag-count" id="bagCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow" id="heroEyebrow">Women's edit</p>
+    <h1 id="heroTitle">Quiet clothes<br/>with good posture.</h1>
+    <p class="hero-sub">Considered basics, cut to last more than a season. No logos doing the talking for you.</p>
+    <a href="#shop" class="btn btn-secondary">Shop the edit ↓</a>
+
+    <div class="hero-blocks" aria-hidden="true">
+      <div class="block block-a"></div>
+      <div class="block block-b"></div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+    <div class="section-head">
+      <h2 id="shopTitle">The Women's edit</h2>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#" class="logo">AMARA</a>
+    <p>Shipping across Jordan &amp; the Gulf · New drops every month</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Size guide</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
